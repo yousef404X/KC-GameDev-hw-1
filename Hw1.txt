@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           int health = 100;;
+            int damaged()
+            {
+                return health - 20;
+                
+            }
+            int Hero = damaged();
+            
+            int Boost(){
+
+                return Hero + 10;
+            }
+
+            Console.WriteLine("Damaged health: " + Hero);
+            Console.WriteLine("Boosted health: " + Boost());
+            if (Hero < Boost())
+            {
+                Console.WriteLine("80 is less than 90");
+            }
+
+        }
+    }
+}
